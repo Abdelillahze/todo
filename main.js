@@ -6,7 +6,6 @@ var cr = document.getElementById("create")
 
 setInterval(() => {
     document.getElementById("length").innerHTML = `${document.querySelectorAll(".card .container .text").length} items left`;
-    document.getElementById("lengthph").innerHTML = `${document.querySelectorAll(".card .container .text").length} items left`;
     document.getElementById("clear").onclick = function () {
         document.querySelectorAll(".card .container .text").forEach(e => e.parentNode.removeChild(e))
     }

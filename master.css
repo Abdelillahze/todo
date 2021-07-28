@@ -140,7 +140,7 @@ input + span {
 }
 
 .card .footer div:last-child:hover,
-.card .footer span:hover {
+.card .footer .tools span:hover {
     color: rgb(50 90 181);
     cursor: pointer;
 }
@@ -153,43 +153,19 @@ input + span {
     color: rgb(50 90 181);
 }
 
-.pc {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.toolsph {
-    display: none;
-}
-
-.toolsph2 {
-    display: none;
-}
-
 @media (max-width: 767px) {
-    .toolsph {
+    .card .footer .tools {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px;
-    }
-    .pc {
-        display: none;
-    }
-    .toolsph2 {
-        margin-top: 30px;
-        width: 100%;
-        padding: 15px;
-        display: block;
-        background-color: var(--section-color);
-        color: rgb(63, 63, 63);
-        border-radius: 5px;
+        order: 2;
+        margin-top: 50px;
         text-align: center;
+        background-color: var(--section-color);
+        padding: 15px;
+        border-radius: 5px;
     }
     .card .footer {
         flex-wrap: wrap;
+        padding: 15px;
     }
     .image img {
         width: 200%;
