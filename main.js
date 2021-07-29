@@ -44,6 +44,7 @@ cr.addEventListener("keyup", function(event) {
     <input type="text" value="${cr.value}" readonly>
     <span></span>
 </div>`
+cr.value = '';
     }
 }) 
 
